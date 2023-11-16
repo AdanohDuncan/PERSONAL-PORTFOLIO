@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="loggo.jpg" class="logo">
+                <ul>
+                    <li><a href=""> HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICES </a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">CONTACT</a></li>
+
+                </ul>
+
+
+                
+                
+            </nav>
+            <div class="header-text">
+                <p> Designer</p>
+                <h1>Hi I Am <span>Duncan</span><br> From Kenya</h1>
+            </div>
+     </div>
+     <!-------------about--------------->
+     <div id="ABOUT">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="elec.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <p>My Name is Duncan Adoro. <br> Am a Web Developer , a dipomat and a believer of Christ. <br>Currently living in Nairobi kenya.Am passionate about codding and anything to do with programing.
+                </p>
+
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+
+             </div>
+             <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX></span><br>Designing web/app interfaces</li>
+                    <li><span>web development</span><br>web app development</li>
+                    <li><span>app development</span><br>building android/ios apps</li>
+
+                     </ul>
+             </div> <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>UI/UX></span><br>Designing web/app interfaces</li>
+                    <li><span>web development</span><br>web app development</li>
+                    <li><span>app development</span><br>building android/ios apps</li>
+
+                     </ul>
+             </div> <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>UI/UX></span><br>Designing web/app interfaces</li>
+                    <li><span>web development</span><br>web app development</li>
+                    <li><span>app development</span><br>building android/ios apps</li>
+
+                     </ul>
+             </div>
+
+
+
+
+             </div>
+
+            </div>
+
+        </div>
+     </div>
+   <script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+    }
+    
+
+   </script> 
+</body>
+</html>
