@@ -13,26 +13,24 @@
         <div class="container">
             <nav>
                 <img src="loggo.jpg" class="logo">
-                <ul>
-                    <li><a href=""> HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICES </a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">CONTACT</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header"> HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Services">SERVICES </a></li>
+                    <li><a href="#Portfolio">PORTFOLIO</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
 
                 </ul>
-
-
-                
-                
-            </nav>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav>
             <div class="header-text">
                 <p> Designer</p>
                 <h1>Hi I Am <span>Duncan</span><br> From Kenya</h1>
             </div>
      </div>
      <!-------------about--------------->
-     <div id="ABOUT">
+     <div id="About">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -80,7 +78,7 @@
 </div>
  </div>
  <!----------------servives----------------->
- <div id="services ">
+ <div id="Services ">
     <div class="container">
         <h1 class="sub-title"> My Services</h1>
         <div class="services-list">
@@ -144,19 +142,20 @@
             </div>
     </div>
    <!---------------------contact----------------->
-   <div id="contact"></div>
+   <div id="Contact"></div>
    <div class="container">
     <div class="raw">
         <div class="contact-left">
             <h1 class="sub-title"></h1>
-            <p>contact@example.com </p>
-            <p>0757902557</p>
+            <p> <i class="fa-solid fa-paper-plane"></i>duncanadoro@gmail.com </p>
+            <p> <i class="fa-solid fa-square-phone"></i>0757902557</p>
             <div class="social-icons">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
                 <a href=""><i class="fa-brands fa-twitter-square"></i></a>
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
+            <a href="cv.docx" download class="btn btn2">Download CV</a>
 
         </div>
         <div class="contact-right">
@@ -164,13 +163,18 @@
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your email" required>
                 <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn2">Submit</button> 
 
 
             </form>
 
         </div>
     </div>
+   </div>
+   
+
+   </div>
+
    </div>
 
 
@@ -201,6 +205,24 @@
 
 
 
+ </script>
+
+ <script>
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+
+    }
+ 
+ 
+ 
+ 
+ 
  </script>
      
 
